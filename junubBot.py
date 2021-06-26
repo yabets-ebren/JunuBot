@@ -41,7 +41,7 @@ class StreamListener(tweepy.StreamListener):
                 print("Error on_data %s" % str(e))
                 return True
         print(status.text)
-        print(dir(status))
+        #print(dir(status))
 
     def on_error(self, status_code):
         if status_code == 420:
