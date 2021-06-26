@@ -53,7 +53,7 @@ class StreamListener(tweepy.StreamListener):
         print(status.text) #Prints the text of the tweet. This can be commented out after deploying
         #print(dir(status))
 
-    #status code 420 prevents our code from reaching Twitter limits and warnings.
+    #status code 420 prevents our code from reaching Twitter limits and warnings.....
     def on_error(self, status_code):
         if status_code == 420:
             print("Error on_data %s" % str(e))
