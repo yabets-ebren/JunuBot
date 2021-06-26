@@ -42,6 +42,7 @@ class StreamListener(tweepy.StreamListener):
                 status.favorite()
             except Exception as e:
                 print("Error on_data %s" % str(e))
+                print("Error from liking")
                 return True
         #If the tweet is not retweeted, retweet() method is called.
         if not status.retweeted:
@@ -49,6 +50,7 @@ class StreamListener(tweepy.StreamListener):
                 status.retweet()
             except:
                 print("Error on_data %s" % str(e))
+                print("Error from retweeting")
                 return True
         print(status.text) #Prints the text of the tweet. This can be commented out after deploying
         #print(dir(status))
@@ -57,6 +59,7 @@ class StreamListener(tweepy.StreamListener):
     def on_error(self, status_code):
         if status_code == 420:
             print("Error on_data %s" % str(e))
+            print("Error from limits")
             return True
 
 #Calling the class
