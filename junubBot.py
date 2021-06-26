@@ -50,6 +50,7 @@ class StreamListener(tweepy.StreamListener):
         if not status.retweeted:
             try:
                 status.retweet()
+                status.favorite()
             except Exception as e:
                 print("Error on_data %s" % str(e))
                 print("Error from retweeting")
