@@ -1,5 +1,8 @@
 # JunuBot
 ### A Twitter Retweet Bot
+![image](https://user-images.githubusercontent.com/23518337/123507632-72dd8480-d6a5-11eb-88ac-8d8d1ed7a477.png)
+
+
 This project is specifically built to actively listen to tweets, like and retweet them for a research module...
 It uses open source tools to interract with twitter, and host/ launch online. These include:
 1. Built using Python
