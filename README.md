@@ -18,6 +18,11 @@ Junub Bot streams Twitter and actively listens to tweets that contain elements p
 ###Feel free to use this code!
 
 ###MORE ON HOSTING THE BOT ON HEROKU
+First things first
+<ul>
+  A. Heroku needs to know about two files. The Procfile and the requirements.txt file. The Procfile shouldn't have any extension and should be in the root directory. The requirements file often tells Heroku what to install so as to run your app. To generate this file, run 'pip freeze> requirements.txt' without the quotes. These are the two necessary files, plus your python file that will enable Heroku to host the bot.
+  </ul>
+
 1. Create a Heroku account
 2. Then create a Heroku App
 
