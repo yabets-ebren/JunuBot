@@ -55,8 +55,10 @@ class StreamListener(tweepy.StreamListener):
 
     #status code 420 prevents our code from reaching Twitter limits and warnings.
     def on_error(self, status_code):
-        if status_code == 420 or if status_code == 429:
-            return False
+        if status_code == 420:
+            return True
+        if status_code == 429:
+            return True
 
 #Calling the class
 stream_listener = StreamListener(api)
