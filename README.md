@@ -17,3 +17,48 @@ Junub Bot streams Twitter and actively listens to tweets that contain elements p
 
 ###Feel free to use this code!
 
+###MORE ON HOSTING THE BOT ON HEROKU
+1. Create a Heroku account
+2. Then create a Heroku App
+
+![image](https://user-images.githubusercontent.com/23518337/123507772-5130cd00-d6a6-11eb-8db6-41182c88a770.png)
+
+3. In the DEPLOY tab, you can choose between using Heroku CLI or Github. For this project, I deployed it via Github
+4. Make sure to enable automatic deploys so that any changes made on Github are reflected on Heroku, immediately.
+
+![image](https://user-images.githubusercontent.com/23518337/123507856-e5029900-d6a6-11eb-9908-8c9ce1f96621.png)
+
+5. Turn on the APP from the Overview Tab, Dyno information
+
+![image](https://user-images.githubusercontent.com/23518337/123507879-1bd8af00-d6a7-11eb-9840-f79dabe51bab.png)
+
+6. In the settings TAB, add the Tweepy API KEYS - To do this, click on Config Vars. Make sure that the same name they were called in the python file are exactly the same here.
+
+#The code in the python file has the following variable names.... they should be the same in Heroku
+
+![image](https://user-images.githubusercontent.com/23518337/123507967-a0c3c880-d6a7-11eb-8a15-90833ce3d2b0.png)
+
+
+##Config Vars in Heroku
+![image](https://user-images.githubusercontent.com/23518337/123507935-7114c080-d6a7-11eb-962d-bb84e2fe858f.png)
+
+7. Finally, check whether Heroku is up and running....
+Go to Settings and click on More.....
+
+![image](https://user-images.githubusercontent.com/23518337/123508006-d23c9400-d6a7-11eb-9ce9-cebe530d18e7.png)
+
+Then click on View Logs
+
+![image](https://user-images.githubusercontent.com/23518337/123508042-fac48e00-d6a7-11eb-9e31-67880ec79ec4.png)
+
+
+###Yeah! That's it! Your bot should be up and running....
+
+###Will include a link to a demo video soon! Cheers
+
+
+
+
+
+
+
