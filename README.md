@@ -12,6 +12,8 @@ It uses open source tools to interract with twitter, and host/ launch online. Th
 
 ### More about the Bot
 Junub Bot streams Twitter and actively listens to tweets that contain elements passed in a list. Any Tweet mentioning words in the list are automatically favourited (liked), and then retweeted. 
+
 ![image](https://user-images.githubusercontent.com/23518337/123507537-ea5ee400-d6a4-11eb-91b8-07c49cda4831.png)
+
 ###Feel free to use this code!
 
