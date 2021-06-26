@@ -19,7 +19,7 @@ ACCESS_SECRET = environ['ACCESS_SECRET']
 ###********** Authentication **********
 auth = tweepy.OAuthHandler(CONSUMER_KEY,CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY,ACCESS_SECRET)
-api = tweepy.API(auth)
+api = tweepy.API(auth, monitor_rate_limit=True, wait_on_rate_limit=True)
 
 ###********** Build a streamListener class that will listen to tweets based on a track list **********
 class StreamListener(tweepy.StreamListener):
