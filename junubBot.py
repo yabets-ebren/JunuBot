@@ -38,13 +38,13 @@ class StreamListener(tweepy.StreamListener):
 
         #Otherwise if a tweet that meets the criteria isn't liked yet, then it should be liked *favourite()*
         
-        #if not status.favorited:
-            #try:
-                #status.favorite()
-            #except Exception as e:
+        if status.favorited == False:
+            try:
+                status.favorite()
+            except Exception as e:
                 #print("Error on_data %s" % str(e))
-                #print("Error from liking")
-                #return False
+                print("Error from liking")
+                return False
          
         #If the tweet is not retweeted, retweet() method is called.
         if not status.retweeted:
